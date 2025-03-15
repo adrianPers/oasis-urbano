@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        #slider {
+            height: 30dvh;
+            width: 50%;
+            margin: 35dvh auto;
+            overflow: hidden;
+        }
+
+        #box-scroll-slider {
+            height: 100%;
+            width: 200%;
+            display: flex;
+        }
+
+        .slides {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slides img {
+            height: 100%;
+        }
+
+        #slide-01 {
+            transition: 1s;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="slider">
+
+        <div id="box-scroll-slider">
+
+            <div class="slides" id="slide-01">
+                <img src="nave-00.png" alt="">
+            </div>
+            <div class="slides" id="slide-02">
+                <img src="nave-01.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const slide01 = document.getElementById('slide-01')
+        const slide02 = document.getElementById('slide-02')
+        const imgSlide01 = document.querySelector('#slide-01 img')
+        const imgSlide02 = document.querySelector('#slide-02 img')
+        let indice = 1
+
+        setInterval(() => {
+
+            slide01.style.marginLeft = '-50%'
+
+            setTimeout(() => {
+
+                slide01.style.transition = '0s'
+                slide01.style.marginLeft = '0%'
+                imgSlide01.setAttribute('src', `./nave-0${indice}.png`)
+
+             if (indice != 4) {
+                    imgSlide02.setAttribute('src', `./nave-0${indice + 1}.png`)
+                    indice++
+                } else {
+                    imgSlide02.setAttribute('src', `./nave-00.png`)
+                    indice = 0
+               }
+           }, 1000)
+
+            slide01.style.transition = '1s'
+
+        }, 2000)
+
+    </script>
+
+
+</body>
+
+</html>
