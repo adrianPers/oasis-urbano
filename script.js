@@ -15,52 +15,38 @@ btnMenu.addEventListener('click', () => {
 })
 
 const slide01 = document.getElementById('slide-01')
-const slide02 = document.getElementById('slide-02')
-const imgSlide01 = document.querySelector('#slide-01 img')
-const imgSlide02 = document.querySelector('#slide-02 img')
 const bntsSlider = [...document.querySelectorAll('#box-btns-slider > div')]
+
 let INDICE_SLIDER = 1
 
-bntsSlider.map((el, indice) => {
+bntsSlider.map((el, indece) => {
 
-    el.addEventListener('click', () => {
-        INDICE_SLIDER = indice
+    el.addEventListener('click', ()=>{
+        INDICE_SLIDER = indece
+        bntsSlider.map((el) => {
+            el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+        })
+        el.style.backgroundColor = 'rgba(255, 255, 255, 1)'
         slider()
     })
 
 })
 
-setInterval(() => {
+function slider(){
 
-    slide01.style.marginLeft = '-50%'
-
-    setTimeout(() => {
-
-        slider()
-
-    }, 1000)
-
-    slide01.style.transition = '1s'
-
-}, 4000)
-
-function slider() {
-
-    slide01.style.transition = '0s'
-    slide01.style.marginLeft = '0%'
-    imgSlide01.setAttribute('src', `./imgs/nave-0${INDICE_SLIDER}.png`)
+    slide01.style.marginLeft = `-${20 * INDICE_SLIDER}%`
     bntsSlider.map((el) => {
         el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
     })
+    bntsSlider[INDICE_SLIDER].style.backgroundColor = 'rgba(255, 255, 255, 1)'
 
-    bntsSlider[INDICE_SLIDER].style.backgroundColor = 'rgb(116, 199, 222)'
-    if (INDICE_SLIDER != 4) {
-        imgSlide02.setAttribute('src', `./imgs/nave-0${INDICE_SLIDER + 1}.png`)
-        INDICE_SLIDER++
-    } else {
-        imgSlide02.setAttribute('src', `./imgs/nave-00.png`)
+    INDICE_SLIDER++
+    
+    if(INDICE_SLIDER == 5){
         INDICE_SLIDER = 0
     }
 
+
 }
 
+setInterval(slider, 3000)

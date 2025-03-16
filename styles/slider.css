@@ -1,5 +1,4 @@
 
-
 * {
     padding: 0px;
     margin: 0px;
@@ -12,28 +11,33 @@
     overflow: hidden;
     /* border:  solid 1px; */
     position: relative;
+    margin-block: 2dvh;
 }
 
 #box-scroll-slider {
     height: 100%;
-    width: 200%;
+    width: 500%;
     display: flex;
 }
 
 .slides {
     height: 100%;
-    width: 50%;
+    width: 20%;
     display: flex;
     justify-content: center;
+    margin-left: 0%;
 }
 
 .slides img {
     height: 100%;
+    width: 100%;
     background-color: black;
 }
 
 #slide-01 {
     transition: 1s;
+    margin-left: -80%;
+    background-color: white;
 }
 
 #box-btns-slider{
