@@ -47,6 +47,10 @@ body{
 
 }
 
+#box-main > *{
+    margin-block: 5dvh;
+}
+
 ::-webkit-scrollbar {
     /* background: transparent; */
     background-color: rgba(0, 0, 0, 0.1);
@@ -59,4 +63,12 @@ body{
     background-color: rgb(66, 149, 165);
     display: none;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    #box-main > *{
+        margin-block: 2dvh;
+    }
+    
 }

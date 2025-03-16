@@ -1,0 +1,60 @@
+#box-login{
+    width: 100%;
+    background-color: rgb(30, 30, 110);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 10dvh; */
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#box-login #box-img{
+    /* height: ; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-login img{
+    max-height: 30px;
+    
+    min-height: 20px;
+    /* background-color: red; */
+    /* filter: invert(1); */
+}
+
+#box-login h3{
+   
+    flex: 1;
+    padding-left: 1%;
+    min-width: 80%;
+}
+
+.btn-login{
+    border-width: 0px;
+    background-color: rgb(44, 44, 226);
+    /* padding: 1%; */
+    color: inherit;
+    font-weight: bold;
+    border-radius: 10px;
+    text-wrap: nowrap;
+    flex: 1;
+    margin: 0.5%;
+    padding: 1.5%;
+    font-size: 120%;
+}
+
+@media screen and (max-width: 480px) {
+
+    #box-login > *{
+        margin: 2%;
+    }
+
+}
+

@@ -2,7 +2,7 @@
 const btns = [...document.querySelectorAll('.box-btns-galeria > button')]
 const itens01 = [...document.getElementsByClassName('itens-01')]
 const arrayIndices = []
-const arrayParmsDemo = [2, 3, 2, 1]
+const arrayParmsDemo = [5, 3]
 
 btns.map((el, indice) => {
 
@@ -43,3 +43,24 @@ function galeria(direcao, indiceGaleria, itensDemo, numItens, limite) {
         }
     }
 }
+
+{/*
+
+    <div class="galerias">
+
+        <div class="box-btns-galeria">
+            <button> &lt; </button>
+            <button> &gt; </button>
+        </div>
+
+        <div class="box-scroll-galeria">
+            <div class="itens-galeria itens-01"></div>
+            <div class="itens-galeria"></div>
+        </div>
+
+    </div> 
+    
+*/}
+
+
+

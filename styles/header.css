@@ -10,7 +10,7 @@
 header{
     width: 100%;
     height: 10dvh;
-    background-color: rgb(116, 199, 222);
+    background-color: rgb(26, 88, 195);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 3;
@@ -72,16 +72,16 @@ header{
 
 #menu-lateral a:hover{
     font-weight: bold;
-    color: rgb(71, 118, 184);
+    /* color: rgb(71, 118, 184); */
 }
 
 /* #menu-lateral a:hover{
     background-color: rgba(0, 0, 0, 0.1);
 } */
 #menu-lateral a::after, .destaque::after{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgb(71, 118, 184));
+    background-color: white;
     content: ' ';
-    height: 5px;
+    height: 3px;
     position: absolute;
     bottom: 0%;    
     transition: 0.5s;
@@ -112,20 +112,36 @@ header *{
 
 #btn-menu{
     display: none;
-    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7dvh;
+    width: 7dvh;
     background-color: transparent;
     border-width: 0px;
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 2%;
     border-radius: 20%;
+    position: relative;
 }
 
-#btn-menu img{
-    height: 100%;
-    width: 100%;
-    filter: invert(1);
-
+#btn-menu > div{
+    /* position: absolute; */
+    height: 3px;
+    width: 85%;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transition: 0.5s;
+    border-radius: 50px;
 }
+
+/* #linha-bnt-menu-01{
+    top: 20%;
+}
+
+#linha-bnt-menu-03{
+
+    bottom: 20%;
+} */
 
 @media screen and (max-width: 480px) {
     
@@ -134,7 +150,7 @@ header *{
     }
     
     #menu-lateral{
-        background-color: rgb(101, 164, 197);
+        background-color: rgb(69, 53, 196);
         position: absolute;
         height: 90dvh;
         top: 10dvh;
@@ -160,7 +176,7 @@ header *{
     }
 
     #btn-menu{
-        display: inline;
+        display: flex;
 
     }
 

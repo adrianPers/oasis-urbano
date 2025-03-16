@@ -1,18 +1,29 @@
 
-
-#box-pesquisa{
-    /* background-color: red; */
-    width: 100%;
-    /* height: 10dvh; */
+#box-home{
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    padding: 10% 5%;
+    background-image: url('../imgs/fundo-pesquisa.jpg');
+    background-size: 100% 100%;
+}
+
+#box-home h1{
+    color: white;
+}
+
+#box-pesquisa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px rgba(0, 0, 0, 0.5); */
     border-radius: 10px;
-    margin:  2dvh auto;
     flex-wrap: wrap;
     transition: 0.5s;
-    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5); */
     background-color: white;
 }
 
@@ -37,6 +48,7 @@
     /* background-color: red; */
     padding: 2%;
     height: 70px;
+    padding: 5%;
 }
 
 .itens-pesquisa div{
@@ -63,6 +75,10 @@
 
 .itens-pesquisa:hover input, .itens-pesquisa input:focus{
     border-bottom: solid 2px rgb(101, 180, 214);
+}
+
+.itens-pesquisa:hover label, .itens-pesquisa input:focus~label{
+    color: rgb(101, 180, 214);
 }
 
 
@@ -100,10 +116,16 @@
         margin: 0px;
         margin-block: 1%;
     }
-
     
 
-    
+    #box-home{
+        border-radius: 10px;
+        padding: 0%;
+        background-image: none;
+        border: 2px solid rgb(83, 181, 214) ;
+        background-color: rgb(83, 181, 214) ;
+    }
+  
 
 
 }
