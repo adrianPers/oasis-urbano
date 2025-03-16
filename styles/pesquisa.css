@@ -2,22 +2,24 @@
 
 #box-pesquisa{
     /* background-color: red; */
-    width: 90%;
+    width: 100%;
     /* height: 10dvh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: inset 3px rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin: auto;
+    margin:  2dvh auto;
     flex-wrap: wrap;
     transition: 0.5s;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
 .itens-pesquisa{
     flex: 2;
     margin: 1%;
-    border: inset 3px rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
     flex-shrink: 0;
@@ -27,9 +29,8 @@
     transition: 0.5s;
 }
 
-.itens-pesquisa:hover, #box-pesquisa:hover{
-    border: inset 3px rgb(101, 180, 214);
-
+.itens-pesquisa:hover{
+    border: solid 2px rgb(46, 168, 220);
 }
 
 .itens-pesquisa img{
@@ -55,12 +56,13 @@
     width: 95%;
     outline: none;
     border-width: 0px;
-    border-bottom: 3px rgba(0, 0, 0, 0.5) solid;
+    border-bottom: 2px rgba(0, 0, 0, 0.5) solid;
     font-size: 120%;
+    background-color: transparent;
 }
 
-.itens-pesquisa input:hover, .itens-pesquisa input:focus{
-    border-bottom: inset 3px rgb(101, 180, 214);
+.itens-pesquisa:hover input, .itens-pesquisa input:focus{
+    border-bottom: solid 2px rgb(101, 180, 214);
 }
 
 
@@ -74,14 +76,12 @@
     font-size: large;
     font-weight: bold;
     flex: 1;
-    border: inset 3px rgb(101, 180, 214);
     transition: 0.5s;
 }
 
 
 #box-pesquisa button:hover{
-    color: rgb(101, 180, 214);
-    background-color: transparent;
+    background-color: rgb(53, 182, 237);
     cursor: pointer;
 
 }
