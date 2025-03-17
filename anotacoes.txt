@@ -1,0 +1,2 @@
+bg-header : rgb(26, 88, 195);
+bg-login : rgb(30, 30, 110);

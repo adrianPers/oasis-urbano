@@ -32,39 +32,39 @@ function animacaoBtnMenu(indice){
 
 }
 
-// const slide01 = document.getElementById('slide-01')
-// const bntsSlider = [...document.querySelectorAll('#box-btns-slider > div')]
+const slide01 = document.getElementById('slide-01')
+const bntsSlider = [...document.querySelectorAll('#box-btns-slider > div')]
 
-// let INDICE_SLIDER = 1
+let INDICE_SLIDER = 1
 
-// bntsSlider.map((el, indece) => {
+bntsSlider.map((el, indece) => {
 
-//     el.addEventListener('click', ()=>{
-//         INDICE_SLIDER = indece
-//         bntsSlider.map((el) => {
-//             el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
-//         })
-//         el.style.backgroundColor = 'rgba(255, 255, 255, 1)'
-//         slider()
-//     })
+    el.addEventListener('click', ()=>{
+        INDICE_SLIDER = indece
+        bntsSlider.map((el) => {
+            el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+        })
+        el.style.backgroundColor = 'rgba(255, 255, 255, 1)'
+        slider()
+    })
 
-// })
+})
 
-// function slider(){
+function slider(){
 
-//     slide01.style.marginLeft = `-${20 * INDICE_SLIDER}%`
-//     bntsSlider.map((el) => {
-//         el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
-//     })
-//     bntsSlider[INDICE_SLIDER].style.backgroundColor = 'rgba(255, 255, 255, 1)'
+    slide01.style.marginLeft = `-${20 * INDICE_SLIDER}%`
+    bntsSlider.map((el) => {
+        el.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+    })
+    bntsSlider[INDICE_SLIDER].style.backgroundColor = 'rgba(255, 255, 255, 1)'
 
-//     INDICE_SLIDER++
+    INDICE_SLIDER++
     
-//     if(INDICE_SLIDER == 5){
-//         INDICE_SLIDER = 0
-//     }
+    if(INDICE_SLIDER == 5){
+        INDICE_SLIDER = 0
+    }
 
 
-// }
+}
 
-// setInterval(slider, 3000)
+setInterval(slider, 3000)

@@ -1,21 +1,31 @@
 
 #box-home{
+    /* height: 40dvh; */
+    position: relative;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10% 5%;
-    background-image: url('../imgs/fundo-pesquisa.jpg');
-    background-size: 100% 100%;
+    /* background-color: red; */
+    /* background-image: url('../imgs/fundo-pesquisa.jpg'); */
+    /* background-size: 100% 100%; */
 }
 
 #box-home h1{
+    background-color: rgba(30, 30, 110, 0.4);
+    padding-inline: 1%;
+    clip-path: polygon(0% 0%, 100% 0%, 99% 50%, 100% 100%, 0% 100%, 1% 50%);
     color: white;
+    position: absolute;
+    top: 10%;
+    z-index: 2;
 }
 
 #box-pesquisa{
-    width: 100%;
+    bottom: 20%;
+    position: absolute;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +51,7 @@
 }
 
 .itens-pesquisa:hover{
-    border: solid 2px rgb(46, 168, 220);
+    border: solid 2px rgb(26, 88, 195);
 }
 
 .itens-pesquisa img{
@@ -74,17 +84,17 @@
 }
 
 .itens-pesquisa:hover input, .itens-pesquisa input:focus{
-    border-bottom: solid 2px rgb(101, 180, 214);
+    border-bottom: solid 2px rgb(26, 88, 195);
 }
 
 .itens-pesquisa:hover label, .itens-pesquisa input:focus~label{
-    color: rgb(101, 180, 214);
+    color: rgb(26, 88, 195);
 }
 
 
 #box-pesquisa button{
     border-width: 0px;
-    background-color: rgb(101, 180, 214);
+    background-color: rgb(26, 88, 195);
     padding: 2%;
     margin: 1%;
     border-radius: 10px;
@@ -106,9 +116,16 @@
 @media screen and (max-width: 480px) {
 
     #box-pesquisa{
+        position: static;
+        width: 100%;
         flex-direction: column;
         padding: 1%;
         gap: 1%;
+    }
+
+    #box-home h1{
+        /* position: static; */
+        /* background-color: transparent; */
     }
 
     .itens-pesquisa, #box-pesquisa button{
@@ -119,12 +136,15 @@
     
 
     #box-home{
+        height: auto;
         border-radius: 10px;
         padding: 0%;
         background-image: none;
-        border: 2px solid rgb(83, 181, 214) ;
-        background-color: rgb(83, 181, 214) ;
+        border: 2px solid rgb(26, 88, 195);
+        background-color: rgb(26, 88, 195);
     }
+
+    
   
 
 

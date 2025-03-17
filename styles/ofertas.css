@@ -38,14 +38,14 @@
 }
 
 #header-box-ofertas button{
-
+    height: 5dvh;
     padding: 1%;
     border-width: 0px;
     border-radius: 10px;
     font-size: 110%;
     font-weight: bold;
     color: white;
-    background-color: rgb(44, 44, 226);
+    background-color: rgb(26, 88, 195);
 }
 
 #box-galeria-box-ofertas{
@@ -57,7 +57,7 @@
     height: 90%;
     width: 70%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(255, 255, 255, 0.2); */
     padding: 2%;
 }
 
@@ -66,6 +66,25 @@
     width: 100%;
     background-color: aqua;
     border-radius: 10px;
+}
+
+#box-galeria-box-ofertas button{
+    height: 5dvh;
+    padding: 0%;
+    border-width: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+#box-galeria-box-ofertas button:hover{
+    transform: scale(1.5);
+}
+
+#box-galeria-box-ofertas button img{
+    height: 100%;
+    filter: invert(1);
 }
 
 .box-texto-ofertas{
@@ -99,11 +118,11 @@
 
 .box-texto-ofertas h3 span{
     text-decoration: line-through;
-    color: red;
+    color: rgb(223, 40, 40);
 }
 
 .box-texto-ofertas .desconto{
-    background-color: red;
+    background-color: rgb(223, 40, 40);
     padding: 1%;
     border-radius: 5px;
 }
@@ -121,6 +140,16 @@
 
     #header-box-ofertas > *{
         margin-block: 1%;
+    }
+
+    #header-box-ofertas button{
+
+        padding: 2%;
+
+    }
+
+    #header-box-ofertas div{
+        width: 100%;
     }
 
 }

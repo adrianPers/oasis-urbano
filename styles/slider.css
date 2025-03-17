@@ -8,11 +8,11 @@
 #slider {
     height: 50dvh;
     width: 100%;
+    margin-block: 1%;
+
     overflow: hidden;
-    /* border:  solid 1px; */
     position: relative;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -38,8 +38,12 @@
 
 #slide-01 {
     transition: 1s;
-    margin-left: -80%;
+    margin-left: 0%;
+}
+
+#btn-01-slider{
     background-color: white;
+   
 }
 
 #box-btns-slider{
@@ -59,4 +63,14 @@
     background-color: rgba(255, 255, 255, 0.5);
     flex-shrink: 0;
     
+}
+
+@media screen and (max-width: 480px) {
+    
+    #slider {
+        height: 40dvh;
+        width: 100%;
+        margin-block: 1%;
+
+    }
 }
