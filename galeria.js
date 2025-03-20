@@ -2,7 +2,7 @@
 const btns = [...document.querySelectorAll('.box-btns-galeria > button')]
 const itens01 = [...document.getElementsByClassName('itens-01')]
 const arrayIndices = []
-const arrayParmsDemo = [5, 3]
+const arrayParmsDemo = [5, 3, 3]
 
 btns.map((el, indice) => {
 

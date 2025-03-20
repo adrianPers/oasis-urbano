@@ -1,0 +1,50 @@
+
+#box-destinos{
+    height: 40dvh;
+    
+    background-color: rgba(15, 22, 216, 0.1);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+
+#box-destinos div {
+    height: 100%;
+
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#box-destinos div::-webkit-scrollbar {
+    background: transparent;
+    /* display: none; */
+
+}
+
+#box-destinos div::-webkit-scrollbar-thumb {
+    /* background: transparent; */
+    background-color: rgba(4, 71, 153, 0.5);
+    /* display: none; */
+    border-radius: 10px;
+}
+
+
+
+#box-destinos h5{
+
+    min-width: 220px;
+    flex: 1;
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+
+    #box-destinos h5{
+        width: 50%;
+        /* background-color: red; */
+    } 
+    
+}

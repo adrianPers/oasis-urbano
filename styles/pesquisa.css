@@ -38,7 +38,7 @@
 }
 
 .itens-pesquisa{
-    flex: 2;
+    flex: 1;
     margin: 1%;
     border: solid 2px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -140,8 +140,8 @@
         border-radius: 10px;
         padding: 0%;
         background-image: none;
-        border: 2px solid rgb(26, 88, 195);
-        background-color: rgb(26, 88, 195);
+        /* border: 2px solid rgb(26, 88, 195);
+        background-color: rgb(26, 88, 195); */
     }
 
     

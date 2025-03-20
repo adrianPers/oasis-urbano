@@ -48,22 +48,20 @@ body{
 }
 
 #box-main > *{
-    margin-block: 5dvh;
+    margin-block: 2dvh;
 }
 
-::-webkit-scrollbar {
-    /* background: transparent; */
+/* ::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.1);
     display: none;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background: transparent; */
     background-color: rgb(66, 149, 165);
     display: none;
     border-radius: 10px;
-}
+} */
 
 @media screen and (max-width: 480px) {
 
