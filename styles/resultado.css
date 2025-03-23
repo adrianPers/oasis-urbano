@@ -1,0 +1,22 @@
+#box-resultado{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    display: none;
+}
+
+.resultado{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-block: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.resultado img{
+    height: 200px;
+    width: 100%;
+}

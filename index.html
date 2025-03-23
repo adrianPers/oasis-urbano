@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/promocao.css">
     <link rel="stylesheet" href="styles/anuncio.css">
     <link rel="stylesheet" href="styles/destinos.css">
+    <link rel="stylesheet" href="styles/resultado.css">
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
     <title>Oásis Urbano</title>
 </head>
@@ -24,14 +25,14 @@
 
     <header>
         <div id="menu-header">
-            <a href="#" id="logo-header">
+            <a href="index.html" id="logo-header">
                 <img src="imgs/logo.png">
             </a>
 
 
             <ul id="menu-lateral">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">RESERVAS</a></li>
+                <li><a href="pesquisa.html">RESERVAS</a></li>
                 <li><a href="#">VIAGENS</a></li>
                 <li><a href="#">CONTATOS</a></li>
             </ul>
@@ -91,7 +92,7 @@
                     </div>
             
                 </div>
-                <div id="box-pesquisa">
+                <div id="box-pesquisa" class="box-pesquisa-home">
 
                     <div class="itens-pesquisa">
                         <img src="imgs/icon-local.png">
@@ -115,11 +116,40 @@
                         </div>
                     </div>
 
-                    <button>Buscar</button>
+                    <button id="btn-pesquisa">Buscar</button>
 
                 </div>
 
 
+
+            </div>
+
+            <div id="box-resultado">
+
+
+                <!-- <div class="resultado">
+                    <img src="imgs/fundo-cards-00.jpg" alt="">
+                    <div class="box-texto-ofertas">
+
+                        <p>local</p>
+                        <h3>Nome do hotel</h3>
+
+                        <h4>
+                            <span class="nota">9.5</span>
+                            <span class="stars">
+                            &#9733; &#9733; &#9733; &#9733; &#9734;                                        
+                        </span>
+                        (243)
+                        </h4>
+                        <h3>R$ 400 -  <span>R$ 625</span> </h3>
+                        <p>por diária</p>
+
+                        <span class="desconto">20% de desconto</span>
+                    </div>
+                </div> -->
+                
+
+                        
 
             </div>
 
@@ -1192,8 +1222,8 @@
                     <h5>  Hotéis em Santa Lúcia </h5>
 
                 </div>
-                     
-                </div>
+                  
+           </div>
 
         </div>
 
@@ -1252,6 +1282,8 @@
     </main>
     <script src="script.js"></script>
     <script src="galeria.js"></script>
+    <script src="pesquisa.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/pg-pesquisa.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pesquisa.css">
+    <link rel="stylesheet" href="styles/box-login.css">
+    <title>Pesquisa</title>
+</head>
+<body>
+
+    <header>
+        <div id="menu-header">
+            <a href="index.html" id="logo-header">
+                <img src="imgs/logo.png">
+            </a>
+
+
+            <ul id="menu-lateral">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">RESERVAS</a></li>
+                <li><a href="#">VIAGENS</a></li>
+                <li><a href="#">CONTATOS</a></li>
+            </ul>
+
+            <button id="btn-menu">
+                <div id="linha-bnt-menu-01"></div>
+                <div id="linha-bnt-menu-02"></div>
+                <div id="linha-bnt-menu-03"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="box-main">
+            <div id="box-pesquisa" class="box-pesquisa-pg">
+
+                <div class="itens-pesquisa">
+                    <img src="imgs/icon-local.png">
+                    <div>
+                        <label for="">Para onde vamos?</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="itens-pesquisa">
+                    <img src="imgs/icon-data.png">
+                    <div>
+                        <label for="">Datas</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="itens-pesquisa">
+                    <img src="imgs/icon-users.png">
+                    <div>
+                        <label for="">Viajantes</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <button id="btn-pesquisa">Buscar</button>
+
+            </div>
+
+            <div id="box-main-pg">
+
+                <button id="btn-filtros">Filtros V</button>
+                <div id="box-filtros">
+
+                    <h1>Filtros</h1>
+
+                    <button id="btn-fechar-filtros">X</button>
+                    
+                    <div class="filtro f-usados">
+                        <h3>Mais usados</h3>
+                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                    </div>
+
+                    <div class="filtro f-esatdia">
+
+                        <h3>Opções de estadia</h3>
+
+                        
+                        <input type="radio" name="f-esatdia" id="" checked><label for="">Todos</label><br>
+                        <input type="radio" name="f-esatdia" id=""><label for="">Hotel</label><br>
+                        <input type="radio" name="f-esatdia" id=""><label for="">Casa</label><br>
+
+                    </div>
+
+                    <div class="filtro f-preco">
+                        <h3>Preço por diária</h3>
+                        <input type="range"><br>
+                        <input type="number" name="" id="">
+                        <input type="number" name="" id="">
+                    </div>
+
+                    <div class="filtro f-avaliacao">
+                        <h3>Por avaliação</h3>
+                        
+                        <button> &#9733;  1 </button>
+                        <button> &#9733;  2</button>
+                        <button> &#9733;  3</button>
+                        <button> &#9733;  4</button>
+                        <button> &#9733;  5</button>
+                    </div>
+
+                    <div class="filtro f-acessibilidade">
+                        <h3>Acessibilidade</h3>
+                        <input type="checkbox" name="" id=""><label for="">Elevador</label><br>
+                        <input type="checkbox" name="" id=""><label for="">Banheiro acessilvel</label><br>
+                        <input type="checkbox" name="" id=""><label for="">Rampas de acesso</label><br>
+
+                    </div>
+
+                    <div class="filtro f-comodidades">
+                        <h3>Comodidades</h3>
+
+                        
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Piscina
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Aceita pests
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Restaurante
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Ar-condicionado
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Wi-fi incluído
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Bar
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Estacionamento
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            hidromassagem
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Vista p/ mar
+                         </button>
+
+                        <button>
+                            <img src="imgs/icon-data.png" alt="">
+                            Spa
+                         </button>
+
+
+                    </div>
+
+                </div>
+
+                <div id="box-resultados">
+
+
+                    <div id="box-login">
+                        <div id="box-img">
+                            <img src="imgs/icon-etiqueta.png" alt="">
+                        </div>
+                        <h3>Ao fazer o login você recebe ofertas únicas e fica por dentro das melhores promoções</h2>
+                            <button class="btn-login">Fazer login</button>
+                    </div>
+
+
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+                    <div class="resultado"></div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="menu.js"></script>
+    <script src="pesquisa.js"></script>
+</body>
+</html>
