@@ -106,18 +106,121 @@ class Card{
 const btnFiltros = document.getElementById('btn-filtros')
 const boxFiltros = document.getElementById('box-filtros')
 const btnFecharFiltros = document.getElementById('btn-fechar-filtros')
-
+const headerBoxFiltros = document.getElementById('header-box-filtros')
+const boxFiltrosSelecionados = document.getElementById('box-filtros-selecionados')
+const foorterBoxFiltros = document.getElementById('footer-box-filtros')
 
 btnFiltros.addEventListener('click', () => {
 
     boxFiltros.style.left = '0%'
+    headerBoxFiltros.style.left = '0%'
+    foorterBoxFiltros.style.left = '0%'
 
 })
-
-
 
 btnFecharFiltros.addEventListener('click', () => {
 
     boxFiltros.style.left = '-100%'
+    headerBoxFiltros.style.left = '-100%'
+    foorterBoxFiltros.style.left = '-100%'
 
 })
+
+const bntsFiltroAvaliacao = [...document.querySelectorAll('.f-avaliacao > button')]
+
+bntsFiltroAvaliacao.map((el) => {
+    el.addEventListener('click', () => {
+
+        el.classList.toggle('destaque')
+        adicionarNaListaDeFiltros(el.innerHTML)
+        
+    })
+})
+
+const btnsFiltroComodiade = [...document.querySelectorAll('.f-comodidades > button')]
+
+btnsFiltroComodiade.map((el) => {
+    el.addEventListener('click', () => {
+
+        el.classList.toggle('destaque')
+        adicionarNaListaDeFiltros(el.children[1].innerHTML)
+        
+    })
+})
+
+function adicionarNaListaDeFiltros(filtro){
+
+    if([...boxFiltrosSelecionados.children].some((el) => {
+        return el.innerHTML == filtro
+    })){
+
+        boxFiltrosSelecionados.removeChild(
+            [...boxFiltrosSelecionados.children].find((el) => {
+                if(el.innerHTML == filtro){
+                    return el
+                }
+            })
+        )
+
+    } else {
+        let spanFiltro = document.createElement('span')
+        spanFiltro.innerHTML = filtro
+        spanFiltro.classList.toggle('destaque')
+        boxFiltrosSelecionados.appendChild(spanFiltro)
+    }
+
+}
+
+const inputsFiltros = [...document.getElementsByClassName('inputs-filtros')]
+
+inputsFiltros.map((el) => {
+    el.addEventListener('change', () => {
+    
+        adicionarNaListaDeFiltros(document.querySelector(`label[for=${el.id}]`).innerHTML)
+
+    })
+
+})
+
+const btnLimparFiltros = document.querySelector('#box-filtros-selecionados  > button')
+
+btnLimparFiltros.addEventListener('click', ()=> {
+    [...boxFiltrosSelecionados.children].map((el) => {
+        if(el.innerHTML != 'Limpar'){
+            boxFiltrosSelecionados.removeChild(el)
+        }
+    })
+
+    inputsFiltros.map((el) => {
+        el.checked = false
+    })
+
+    btnsFiltroComodiade.map((el) => {
+        el.classList.remove('destaque')
+    })
+})
+
+const btnPesquisaFiltro = document.querySelector('.f-pesquisa img')
+
+btnPesquisaFiltro.addEventListener('click', () => {
+
+    let inputPesquisa = btnPesquisaFiltro.previousElementSibling
+
+    if(inputPesquisa.value != ''){
+        let spanFiltro  = document.createElement('span')
+        spanFiltro.innerHTML = inputPesquisa.value
+        spanFiltro.classList.add('destaque')
+        boxFiltrosSelecionados.appendChild(spanFiltro)
+        inputPesquisa.value = ''
+    }
+})
+
+const ranges = document.querySelectorAll('.f-preco input[type=range]')
+const inputPrecos = document.querySelectorAll('.f-preco input[type=number]')
+
+
+setInterval(() => {
+    inputPrecos[0].value = ranges[0].value 
+    inputPrecos[1].value = ranges[1].value 
+}, 50)
+

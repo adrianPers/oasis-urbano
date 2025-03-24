@@ -1,5 +1,4 @@
-
-#box-main-pg{
+#box-main-pg {
     /* background-color:     rgba(0, 0, 0, 0.1); */
     display: flex;
     height: 65dvh;
@@ -7,24 +6,20 @@
     /* background-color: red; */
 }
 
-#box-filtros{
+#box-filtros {
     width: 30%;
-    height: 90%;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    /* overflow: auto; */
-    /* border-right    : 1px solid blue; */
-
-    /* border: solid 1px gray; */
-    /* position: fixed; */
+    position: relative;
 }
 
-#box-resultados{
+
+
+#box-resultados {
     /* background-color: aqua; */
     flex: 1;
     padding: 1%;
 }
 
-.resultado{
+.resultado {
     height: 30dvh;
     width: 100%;
     border-radius: 10px;
@@ -32,38 +27,83 @@
     margin-block: 1%;
 }
 
-#btn-fechar-filtros{
+#header-box-filtros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+#btn-fechar-filtros {
     display: none;
 }
 
-#btn-filtros{
+#btn-filtros {
     display: none;
 }
 
-.filtro{
+.filtro {
     /* border-bottom: 1px solid gray; */
     /* background-color: red; */
     padding: 2%;
     margin-block: 2%;
 }
 
-.filtro h3{
+.filtro h3 {
     /* background-color: red; */
 }
 
-.filtro input[type=checkbox], .filtro input[type=radio]{
+.filtro input[type=checkbox],
+.filtro input[type=radio] {
     margin: 2%;
     transform: scale(1.5);
 
 }
 
-.filtro label{
+.filtro label {
     font-size: 110%;
 }
 
+#box-filtros-selecionados{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    position: relative;
+    padding-bottom: 10%;
+    transition: 0.5s;
+    /* flex-direction: row-reverse; */
+}
+
+#box-filtros-selecionados button{
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    font-size: 125%;
+    color: rgb(0, 0, 255);
+    /* border: solid 1px blue; */
+    position:absolute;
+    right: 0%;
+    bottom: 0%;
+    /* width: 100%; */
+    
+}
+
+button{
+    cursor: pointer;
+
+}
+
+#box-filtros-selecionados span{
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+}
 
 
-.filtro button{
+.filtro button {
     flex: 1;
     margin: 1%;
     padding: 1%;
@@ -71,87 +111,220 @@
     border: solid 1px gray;
     font-size: 110%;
     background-color: transparent;
+
+}
+
+.destaque{
+    color: rgb(26, 88, 195);
+    outline: solid 1px rgb(26, 88, 195);
+    background-color: rgba(26, 88, 195, 0.1)  !important;
     
 }
 
+.f-pesquisa div{
+    /* background-color: red; */
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px gray;
+}
+
+.f-pesquisa div:hover{
+
+    outline: solid 1px rgb(26, 88, 195);
+
+}
+
+.f-pesquisa img{
+    height: 50px;
+    padding: 2%;
+    /* background-color: red; */
+
+}
 
 
-.f-comodidades, .f-avaliacao{
+.f-pesquisa input{
+
+    width: 100%;
+    font-size: 150%;
+    padding: 2%;
+    outline: none;
+    border-width: 0px;
+    /* border-right: 1px solid gray; */
+
+    /* border-radius: 5px; */
+
+}
+
+.f-comodidades,
+.f-avaliacao {
     /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
 }
 
-.filtro h3{
+.filtro h3 {
     width: 100%;
     margin-bottom: 2%;
 }
 
-.f-comodidades button{
-    
+.f-comodidades button {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-wrap: nowrap;
-}   
+}
 
-.f-comodidades img{
+.f-comodidades img {
     height: 50px;
+}
+
+.f-preco{
+    /* background-color: red; */
+}
+
+.f-preco input[type=range]{
+    width: 100%;
+    margin-block: 5%;
+}
+
+.f-preco div{
+    /* background-color: aqua; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    font-size: 110%;
+    padding: 2%
+    ;align-items: center;
+    border: 1px solid gray;
+}
+
+.f-preco label{
+
+    text-wrap: nowrap;
+
+}
+
+.f-preco div input{
+    flex: 1;
+    border-width: 0px;
+    outline: none;
+    font-size: 100%;
+    padding: 1%;
 }
 
 
 
 
 
+
+    #footer-box-filtros{
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer-box-filtros button{
+        background-color: rgb(255, 255, 255);
+        border-width: 0px;
+        font-size: 125%;
+        color: rgb(26, 88, 195);
+        border: 1px solid rgb(26, 88, 195);
+        background-color: rgba(26, 88, 195, 0.1);
+        border-radius: 10px;
+        margin-block: 1%;
+        width: 100%;
+        padding: 2%;
+    }
+
+
 @media screen and (max-width: 480px) {
 
-    #btn-fechar-filtros{
+    #btn-fechar-filtros {
         display: block;
         background-color: transparent;
-        position: absolute;
+        /* position: absolute; */
         top: 2%;
         right: 5%;
         height: 5dvh;
         width: 5dvh;
         border-radius: 50%;
-        border: solid blue 2px;
-        color: blue;
+        border: solid 2px rgb(26, 88, 195);
+        color: rgb(26, 88, 195);
     }
-   
 
-    #box-main-pg{
+    #box-filtros-selecionados{
+        padding-top: 10dvh;
+    }
+
+
+    #box-main-pg {
         flex-direction: column;
     }
 
-    #box-filtros{
+    #box-filtros {
         position: fixed;
         background-color: rgb(255, 255, 255);
         width: 100%;
         height: 90dvh;
-        left: 0%;
         top: 10%;
         left: -100%;
-        z-index: 2 ;
+        z-index: 2;
         transition: 0.5s;
         padding: 1%;
-        border-right: 1px solid blue;
         overflow: auto;
     }
-    
-    #btn-filtros{
+
+    #btn-filtros {
         display: block;
         pointer-events: auto;
-        border: 2px solid blue;
-        color: blue;
+        border: 2px solid rgb(26, 88, 195);
+        color: rgb(26, 88, 195);
         padding: 1.5%;
         border-radius: 10px;
         font-size: 125%;
         margin-inline: 1%;
         background-color: transparent;
+        width: 98%;
 
     }
 
-   
+    #header-box-filtros, #footer-box-filtros{
+        background-color: white;
+        position: fixed;
+        height: 10%;
+        left: -100%;
+        z-index: 2;
+        padding-inline: 3%;
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    #header-box-filtros{
+        top: 10%;
+
+    }
+
+    .f-comodidades{
+        padding-bottom: 10dvh;
+    }
+
+
+    #footer-box-filtros{
+        bottom: 0%;
+        border-top: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #footer-box-filtros button{
+        background-color: white;
+        border-width: 0px;
+        font-size: 125%;
+        color: blue;
+    }
+
 
 
 }

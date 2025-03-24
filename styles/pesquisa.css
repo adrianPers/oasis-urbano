@@ -52,18 +52,17 @@
 .itens-pesquisa{
     flex: 2;
     margin: 1%;
-    border: solid 2px rgba(0, 0, 0, 0.5);
+    border: solid 1px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
     min-width: 200px;
-    transition: 0.5s;
 }
 
 .itens-pesquisa:hover{
-    border: solid 2px rgb(26, 88, 195);
+    outline: solid 2px rgb(26, 88, 195);
 }
 
 .itens-pesquisa img{
@@ -90,7 +89,7 @@
     width: 95%;
     outline: none;
     border-width: 0px;
-    border-bottom: 2px rgba(0, 0, 0, 0.5) solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
     font-size: 120%;
     background-color: transparent;
 }

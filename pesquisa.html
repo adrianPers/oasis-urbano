@@ -68,19 +68,42 @@
             <div id="box-main-pg">
 
                 <button id="btn-filtros">Filtros V</button>
+
                 <div id="box-filtros">
 
-                    <h1>Filtros</h1>
+                    <div id="header-box-filtros">
 
-                    <button id="btn-fechar-filtros">X</button>
+                        <h1>Filtros</h1>
+
+                        <button id="btn-fechar-filtros">X</button>
+                    </div>
+
+                    
+                    <div id="box-filtros-selecionados">
+                        <button>Limpar</button>
+                    </div>
+                    
+                    <div id="footer-box-filtros">
+                        <button>Aplicar</button>
+                    </div>
+
+                    <div class="filtro f-pesquisa">
+                        <h3>Pesquisar por nome da propriedade</h3>
+                        <div>
+                            <input type="text" id="pesquisa-filtro" placeholder="Ex.: Hotel Letoh">
+                            <img src="imgs/icon-data.png" alt="">
+                        </div>
+                    </div>
+
                     
                     <div class="filtro f-usados">
                         <h3>Mais usados</h3>
-                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
-                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
-                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
-                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
-                        <input type="checkbox" name="" id=""> <label for=""> São Paulo</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-u-01"><label for="f-u-01">Tudo incluído</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-u-02"><label for="f-u-02">São Paulo</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-u-03"><label for="f-u-03">Piscina</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-u-04"><label for="f-u-04"> &#9733; 4</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-u-05"><label for="f-u-05">Elevador</label><br>
+
                     </div>
 
                     <div class="filtro f-esatdia">
@@ -88,17 +111,42 @@
                         <h3>Opções de estadia</h3>
 
                         
-                        <input type="radio" name="f-esatdia" id="" checked><label for="">Todos</label><br>
-                        <input type="radio" name="f-esatdia" id=""><label for="">Hotel</label><br>
-                        <input type="radio" name="f-esatdia" id=""><label for="">Casa</label><br>
+                        <input type="radio" name="f-esatdia" id="f-e-01" checked><label for="f-e-01">Todos</label><br>
+                        <input type="radio" name="f-esatdia" id="f-e-02"><label for="f-e-02">Hotel</label><br>
+                        <input type="radio" name="f-esatdia" id="f-e-03"><label for="f-e-03">Casa</label><br>
 
                     </div>
 
                     <div class="filtro f-preco">
                         <h3>Preço por diária</h3>
-                        <input type="range"><br>
-                        <input type="number" name="" id="">
-                        <input type="number" name="" id="">
+
+                        <input type="range"  min="200" max="2000" value="500"><br>
+                        <div>
+                            <label for="">Min. R$</label>
+                            <input type="number" name="" id="">
+                        </div>
+                        
+                        <input type="range"  min="200" max="2000" value="2000"><br>
+                        <div>
+                            <label for="">Max. R$</label>
+                            <input type="number" name="" id="">
+                        </div>
+                    </div>
+
+                    <div class="filtro f-cidades">
+
+                        <h3>Cidades</h3>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-01"><label for="f-c-01">São Paulo</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-02"><label for="f-c-02">Rio de Janeiro</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-03"><label for="f-c-03">Recife</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-04"><label for="f-c-04">Natal</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-05"><label for="f-c-05">Campos do Jordão</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-06"><label for="f-c-06">Fortaleza</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-07"><label for="f-c-07">Brasília</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-08"><label for="f-c-08">Salvador</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-09"><label for="f-c-09">Foz do Iguaçu</label><br>
+                        <input type="checkbox"  class="inputs-filtros" id="f-c-10"><label for="f-c-10">Balneário</label><br>
+
                     </div>
 
                     <div class="filtro f-avaliacao">
@@ -113,9 +161,12 @@
 
                     <div class="filtro f-acessibilidade">
                         <h3>Acessibilidade</h3>
-                        <input type="checkbox" name="" id=""><label for="">Elevador</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Banheiro acessilvel</label><br>
-                        <input type="checkbox" name="" id=""><label for="">Rampas de acesso</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-01"><label for="f-a-02-01">Elevador</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-02"><label for="f-a-02-02">Banheiro acessilvel</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-03"><label for="f-a-02-03">Rampas de acesso</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-04"><label for="f-a-02-04">Aceita animais de serviço</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-05"><label for="f-a-02-05">Equipe capacitada em lingua de sinais</label><br>
+                        <input type="checkbox" class="inputs-filtros" id="f-a-02-06"><label for="f-a-02-06">Estacionamento preferencial</label><br>
 
                     </div>
 
@@ -125,52 +176,82 @@
                         
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Piscina
+                            <span>
+                                Piscina
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Aceita pests
+                            <span>
+                                Aceita pets
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Restaurante
+                            <span>
+                                Restaurante
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Ar-condicionado
+                            <span>
+                                Ar-condicionado
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Wi-fi incluído
+                            <span>
+                                Wi-fi incluído
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Bar
+                            <span>
+                                Bar
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Estacionamento
+                            <span>
+                                Estacionamento
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            hidromassagem
+                            <span>
+                                hidromassagem
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Vista p/ mar
+                            <span>
+                                Vista p/ mar
+
+                            </span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            Spa
+                            <span>
+                                Spa
+
+                            </span>
                          </button>
 
 
