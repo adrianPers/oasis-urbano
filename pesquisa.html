@@ -82,10 +82,10 @@
                     <div id="box-filtros-selecionados">
                         <button>Limpar</button>
                     </div>
-                    
                     <div id="footer-box-filtros">
                         <button>Aplicar</button>
                     </div>
+
 
                     <div class="filtro f-pesquisa">
                         <h3>Pesquisar por nome da propriedade</h3>
@@ -119,17 +119,17 @@
 
                     <div class="filtro f-preco">
                         <h3>Preço por diária</h3>
-
-                        <input type="range"  min="200" max="2000" value="500"><br>
-                        <div>
-                            <label for="">Min. R$</label>
-                            <input type="number" name="" id="">
-                        </div>
+                        <input type="range" min="200" max="1000" value="500">
                         
-                        <input type="range"  min="200" max="2000" value="2000"><br>
                         <div>
-                            <label for="">Max. R$</label>
-                            <input type="number" name="" id="">
+                            <label for="">Min R$</label>
+                            <input type="number">
+                        </div>
+
+                        <input type="range" min="200" max="1000" value="1000">
+                        <div>
+                            <label for="">Max R$</label>
+                            <input type="number">
                         </div>
                     </div>
 
@@ -152,11 +152,11 @@
                     <div class="filtro f-avaliacao">
                         <h3>Por avaliação</h3>
                         
-                        <button> &#9733;  1 </button>
-                        <button> &#9733;  2</button>
-                        <button> &#9733;  3</button>
-                        <button> &#9733;  4</button>
-                        <button> &#9733;  5</button>
+                        <button>&#9733; 1</button>
+                        <button>&#9733; 2</button>
+                        <button>&#9733; 3</button>
+                        <button>&#9733; 4</button>
+                        <button>&#9733; 5</button>
                     </div>
 
                     <div class="filtro f-acessibilidade">
@@ -176,82 +176,52 @@
                         
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Piscina
-
-                            </span>
+                            <span>Piscina</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Aceita pets
-
-                            </span>
+                            <span>Aceita pets</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Restaurante
-
-                            </span>
+                            <span>Restaurante</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Ar-condicionado
-
-                            </span>
+                            <span>Ar-condicionado</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Wi-fi incluído
-
-                            </span>
+                            <span>Wi-fi incluído</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Bar
-
-                            </span>
+                            <span>Bar</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Estacionamento
-
-                            </span>
+                            <span>Estacionamento</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                hidromassagem
-
-                            </span>
+                            <span>hidromassagem</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Vista p/ mar
-
-                            </span>
+                            <span>Vista p/ mar</span>
                          </button>
 
                         <button>
                             <img src="imgs/icon-data.png" alt="">
-                            <span>
-                                Spa
-
-                            </span>
+                            <span>Spa</span>
                          </button>
 
 
@@ -270,17 +240,37 @@
                             <button class="btn-login">Fazer login</button>
                     </div>
 
+                    <!-- <div id="carregando"></div> -->
 
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
-                    <div class="resultado"></div>
+                    <!-- <div class="resultado">
+
+                        <img src="imgs/fundo-ofertas.jpg" alt="">
+                        <div>
+                            <h3>Hotel Letoh</h3>
+                            <p>Cidade</p>
+                            <h3>R$ 200</h3>
+                            <span>
+                                <span class="estrelas">
+                                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                                </span>
+                                (734)
+                            </span>
+                            <div class="box-tags">
+                                <span>elevador</span>
+                                <span>Aceita pets</span>
+                                <span>elevador</span>
+                                <span>Aceita pets</span>
+                                <span>elevador</span>
+                                <span>Aceita pets</span>
+                                
+                            </div>
+
+
+                        </div>
+                    </div> -->
+
+
+                   
 
                 </div>
 
@@ -293,6 +283,6 @@
 
 
     <script src="menu.js"></script>
-    <script src="pesquisa.js"></script>
+    <script src="pesquisa.js" type="module"></script>
 </body>
 </html>

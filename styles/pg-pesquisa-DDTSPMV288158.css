@@ -1,4 +1,4 @@
-#box-main-pg {
+/* #box-main-pg {
     /* background-color:     rgba(0, 0, 0, 0.1); */
     display: flex;
     height: 65dvh;
@@ -8,7 +8,7 @@
 
 #box-filtros {
     width: 30%;
-    /* position: relative; */
+    position: relative;
 }
 
 
@@ -54,7 +54,7 @@
 .box-tags span{
     border-radius: 5px;
     padding: 1%;
-    margin: 1%;
+    margin-block: 1%;
     display: inline-block;
     color: rgb(35, 97, 151);
     outline: 1px solid rgb(35, 97, 151);
@@ -282,7 +282,6 @@ button{
         /* background-color: red; */
         border-radius: 50%;
         border: inset 10px rgb(139, 157, 216);
-        border-style: inset;
         /* transition: 0.5s; */
         animation: carregar 1s infinite linear;
     }
@@ -390,4 +389,4 @@ button{
         width: 100%;
     }
 
-}
+} */
