@@ -30,7 +30,7 @@ class Hotel {
                 this.arrayNomesHotel[numeroAleatorio(0, this.arrayNomesHotel.length - 1)]
         )
         this.local.innerHTML = cidades[numeroAleatorio(0, cidades.length - 1)]
-        this.h3Preco.innerHTML = numeroAleatorio(preco[0], preco[1])
+        this.h3Preco.innerHTML = ` R$ ${numeroAleatorio(preco[0], preco[1])},00`
 
         this.divAvaliacao = document.createElement('span')
 
@@ -49,28 +49,42 @@ class Hotel {
         this.divTags = document.createElement('div')
         this.divTags.classList.add('box-tags')
 
-        this.arrayIndiceTags = []
-        this.indiceTag = numeroAleatorio(0, 5)
-        this.arrayIndiceTags.push(this.indiceTag)
-        this.i = 0
+        if (acessibilidade.length != 6) {
 
-        for (this.i; this.i < 2; this.i++) {
+            acessibilidade.map((el) => {
 
-            while (this.arrayIndiceTags.some((el) => {
-                return el == this.indiceTag
-            })) {
-                this.indiceTag = numeroAleatorio(0, 5)
+                this.spanTag = document.createElement('span')
+                this.spanTag.innerHTML = el
+                this.divTags.appendChild(this.spanTag)
+
+            })
+
+        } else {
+
+            this.arrayIndiceTags = []
+            this.indiceTag = numeroAleatorio(0, 5)
+            this.arrayIndiceTags.push(this.indiceTag)
+            this.i = 0
+
+            for (this.i; this.i < 2; this.i++) {
+
+                while (this.arrayIndiceTags.some((el) => {
+                    return el == this.indiceTag
+                })) {
+                    this.indiceTag = numeroAleatorio(0, 5)
+                }
+
+                this.arrayIndiceTags.push(this.indiceTag)
+
             }
 
-            this.arrayIndiceTags.push(this.indiceTag)
+            this.arrayIndiceTags.map((el) => {
+                this.spanTag = document.createElement('span')
+                this.spanTag.innerHTML = acessibilidade[el]
+                this.divTags.appendChild(this.spanTag)
+            })
 
         }
-
-        this.arrayIndiceTags.map((el) => {
-            this.spanTag = document.createElement('span')
-            this.spanTag.innerHTML = acessibilidade[el]
-            this.divTags.appendChild(this.spanTag)
-        })
 
         this.divTextoHotel.appendChild(this.h3NomeHotel)
         this.divTextoHotel.appendChild(this.local)
@@ -80,7 +94,7 @@ class Hotel {
 
         this.divHotel.appendChild(this.imgHotel)
         this.divHotel.appendChild(this.divTextoHotel)
-        
+
     }
 
 }

@@ -6,7 +6,7 @@
 }
 
 #slider {
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
     margin-block: 1%;
     overflow: hidden;
@@ -67,7 +67,7 @@
 @media screen and (max-width: 480px) {
     
     #slider {
-        height: 40dvh;
+        height: 40vh;
         width: 100%;
         margin-block: 1%;
 

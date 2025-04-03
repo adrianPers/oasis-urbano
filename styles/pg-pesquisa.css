@@ -1,7 +1,7 @@
 #box-main-pg {
     /* background-color:     rgba(0, 0, 0, 0.1); */
     display: flex;
-    height: 65dvh;
+    height: 65vh;
     align-items: flex-start;
     /* background-color: red; */
 }
@@ -276,9 +276,9 @@ button{
 
 
     #carregando{
-        margin: 1dvh auto;
-        height: 10dvh;
-        width: 10dvh;
+        margin: 1vh auto;
+        height: 10vh;
+        width: 10vh;
         /* background-color: red; */
         border-radius: 50%;
         border: inset 10px rgb(139, 157, 216);
@@ -303,15 +303,15 @@ button{
         /* position: absolute; */
         top: 2%;
         right: 5%;
-        height: 5dvh;
-        width: 5dvh;
+        height: 5vh;
+        width: 5vh;
         border-radius: 50%;
         border: solid 2px rgb(26, 88, 195);
         color: rgb(26, 88, 195);
     }
 
     #box-filtros-selecionados{
-        padding-top: 10dvh;
+        padding-top: 10vh;
     }
 
 
@@ -323,7 +323,7 @@ button{
         position: fixed;
         background-color: rgb(255, 255, 255);
         width: 100%;
-        height: 90dvh;
+        height: 90vh;
         top: 10%;
         left: -100%;
         z-index: 2;
@@ -363,7 +363,7 @@ button{
     }
 
     .f-comodidades{
-        padding-bottom: 10dvh;
+        padding-bottom: 10vh;
     }
 
 

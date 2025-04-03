@@ -40,7 +40,7 @@ footer{
 
 #box-contatos img{
     filter: invert(1);
-    margin: 1dvh;
+    margin: 1vh;
     height: 50px;
     /* background-color: blue; */
 }

@@ -1,6 +1,6 @@
 
 #box-galeria-cards{
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
     border-block: 0px;
 }
@@ -10,7 +10,7 @@
 }
 
 #box-cards button{
-    height: 6dvh;
+    height: 6vh;
     padding: 0%;
     border-width: 0px;
     background-color: transparent;

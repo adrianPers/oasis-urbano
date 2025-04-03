@@ -1,6 +1,6 @@
 
 #box-home{
-    /* height: 40dvh; */
+    /* height: 40vh; */
     position: relative;
     border-radius: 10px;
     display: flex;
@@ -62,7 +62,7 @@
 }
 
 .itens-pesquisa:hover{
-    outline: solid 2px rgb(26, 88, 195);
+    border: solid 1px rgb(26, 88, 195);
 }
 
 .itens-pesquisa img{
@@ -95,7 +95,7 @@
 }
 
 .itens-pesquisa:hover input, .itens-pesquisa input:focus{
-    border-bottom: solid 2px rgb(26, 88, 195);
+    border-bottom: solid 1px rgb(26, 88, 195);
 }
 
 .itens-pesquisa:hover label, .itens-pesquisa input:focus~label{

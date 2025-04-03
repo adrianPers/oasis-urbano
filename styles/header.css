@@ -9,7 +9,7 @@
 
 header{
     width: 100%;
-    height: 10dvh;
+    height: 10vh;
     background-color: rgb(26, 88, 195);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -115,8 +115,8 @@ header *{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 7dvh;
-    width: 7dvh;
+    height: 7vh;
+    width: 7vh;
     background-color: transparent;
     border-width: 0px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -152,8 +152,8 @@ header *{
     #menu-lateral{
         background-color: rgb(69, 53, 196);
         position: absolute;
-        height: 90dvh;
-        top: 10dvh;
+        height: 90vh;
+        top: 10vh;
         left: -100%;
         transition: 0.5s;
         flex-direction: column;

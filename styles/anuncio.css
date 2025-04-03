@@ -42,7 +42,7 @@
 }
 
 #box-texto-anuncio div > *{
-    margin-block: 2dvh;
+    margin-block: 2vh;
     min-width: 300px;
     /* text-wrap: nowrap; */
  

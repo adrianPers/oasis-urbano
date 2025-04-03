@@ -1,4 +1,3 @@
-// console.log(window.screen.width)
 const btns = [...document.querySelectorAll('.box-btns-galeria > button')]
 const itens01 = [...document.getElementsByClassName('itens-01')]
 const arrayIndices = []

@@ -47,7 +47,7 @@
 }
 
 .header-box-ofertas button{
-    height: 5dvh;
+    height: 5vh;
     padding: 1%;
     border-width: 0px;
     border-radius: 10px;
@@ -58,7 +58,7 @@
 }
 
 #box-galeria-box-ofertas{
-    padding-bottom: 2dvh;
+    padding-bottom: 2vh;
     background-color: rgba(22, 37, 64, 0.7);
 }
 
@@ -96,7 +96,7 @@
 }
 
 #box-galeria-box-ofertas button{
-    height: 5dvh;
+    height: 5vh;
     padding: 0%;
     border-width: 0px;
     border-radius: 0px;
@@ -125,7 +125,7 @@
 }
 
 .box-texto-ofertas > *{
-    margin: 1dvh;
+    margin: 1vh;
 }
 
 .box-texto-ofertas .stars{

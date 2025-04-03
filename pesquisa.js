@@ -136,7 +136,9 @@ setInterval(() => {
 
 const btnAplicarFiltro = document.querySelector('#footer-box-filtros')
 const boxResultado = document.getElementById('box-resultados')
+const btnPesquisa = document.getElementById('btn-pesquisa')
 
+btnPesquisa.addEventListener('click', pesquisar)
 btnAplicarFiltro.addEventListener('click', pesquisar)
 
 function pesquisar(){
@@ -218,11 +220,6 @@ function searchClass(classe){
     return itens
 }
 
-console.log(numeroAleatorio(
-    Number(ranges[0].value), Number(ranges[1].value)
-))
-
-
-console.log(typeof(inputPrecos[0].value))
+pesquisar()
 
 export  default numeroAleatorio
