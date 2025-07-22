@@ -39,3 +39,14 @@ function slider(){
 
 setInterval(slider, 3000)
 
+const cards = [...document.getElementsByClassName('cards')]
+
+let contImgs = 0
+
+cards.map((card) => {
+    card.style.backgroundImage = `url('../imgs/img-estadia-0${contImgs}.jpg')`
+    contImgs++
+    if(contImgs == 5 ){
+        contImgs = 0
+    }
+})

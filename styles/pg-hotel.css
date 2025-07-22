@@ -195,8 +195,8 @@ h1{
 }
 
 #galeria-quartos{
-    height: 40dvh;
     width: 100%;
+    margin-bottom: 2%;
     /* background-color: red; */
 }
 
@@ -241,6 +241,15 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1%;
+}
+
+.box-info-quarto > *{
+    margin-block: 2%;
+
+}
+
+.box-info-quarto p{
+    margin-block: 5%;
 }
 
 .box-info-quarto button{
